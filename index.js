@@ -19,7 +19,7 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
-// locations
+// Locations
 const locations = [
 	{
 		name: "town square",
@@ -35,12 +35,22 @@ const locations = [
 	},
 ];
 
-// initialize buttons
+// Initialize buttons
 button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-// functions
+function update(location) {
+	button1.innerText = location["button text"][0];
+	button2.innerText = location["button text"][1];
+	button3.innerText = location["button text"][2];
+	button1.onclick = location["button functions"][0];
+	button2.onclick = location["button functions"][1];
+	button3.onclick = location["button functions"][2];
+	text.innerText = location.text;
+}
+
+// Functions
 function goTown() {
 	button1.innerText = "Go to store";
 	button2.innerText = "Go to cave";
