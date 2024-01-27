@@ -137,6 +137,10 @@ function attack() {
 }
 function dodge() {}
 
+function defeatMonster() {}
+
+function lose() {}
+
 function fightSlime() {
 	fighting = 0;
 	goFight();
