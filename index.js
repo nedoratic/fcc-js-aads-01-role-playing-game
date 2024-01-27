@@ -153,8 +153,21 @@ function sellWeapon() {
 
 function goFight() {}
 
-function fightSlime() {}
+function attack() {}
 
-function fightBeast() {}
+function dodge() {}
 
-function fightDragon() {}
+function fightSlime() {
+	fighting = 0;
+	goFight();
+}
+
+function fightBeast() {
+	fighting = 1;
+	goFight();
+}
+
+function fightDragon() {
+	fighting = 2;
+	goFight();
+}
