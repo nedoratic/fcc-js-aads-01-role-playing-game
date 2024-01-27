@@ -114,6 +114,33 @@ function goCave() {
 	update(locations[2]);
 }
 
+function goFight() {
+	update(locations[3]);
+	monsterHealth = monsters[fighting].health;
+	monsterStats.style.display = "block";
+	monsterName.innerText = monsters[fighting].name;
+	monsterHealthText.innerText = monsterHealth;
+}
+
+function attack() {}
+
+function dodge() {}
+
+function fightSlime() {
+	fighting = 0;
+	goFight();
+}
+
+function fightBeast() {
+	fighting = 1;
+	goFight();
+}
+
+function fightDragon() {
+	fighting = 2;
+	goFight();
+}
+
 function buyHealth() {
 	if (gold >= 10) {
 		gold -= 10;
@@ -155,25 +182,4 @@ function sellWeapon() {
 	} else {
 		text.innerText = "Don't sell your only weapon!";
 	}
-}
-
-function goFight() {}
-
-function attack() {}
-
-function dodge() {}
-
-function fightSlime() {
-	fighting = 0;
-	goFight();
-}
-
-function fightBeast() {
-	fighting = 1;
-	goFight();
-}
-
-function fightDragon() {
-	fighting = 2;
-	goFight();
 }
