@@ -189,6 +189,10 @@ function getMonsterAttackValue(level) {
 	return hit > 0 ? hit : 0;
 }
 
+function isMonsterHit() {
+	return Math.random() > 0.2;
+}
+
 function attack() {
 	text.innerText = "The " + monsters[fighting].name + " attacks.";
 	text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
