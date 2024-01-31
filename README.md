@@ -12,4 +12,8 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 ### Approach and Methodology
 
-• Mobile First • Responsive Web Design • BEM (Block Element Modifier) • Prompt Engineering
+• Desktop First • Responsive Web Design
+
+### Live Preview
+
+[Homepage](https://nedoratic.github.io/fcc-js-aads-01-role-playing-game/)
